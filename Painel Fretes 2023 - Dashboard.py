@@ -74,6 +74,7 @@ df_info.head(2)
 
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+server = app.server
 
 app.layout = dbc.Container(children=[
     html.H1(children="Painel de Fretes ILOS", style={"background-color": "#242424"}),
